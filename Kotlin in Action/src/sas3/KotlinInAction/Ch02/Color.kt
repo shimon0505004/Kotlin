@@ -15,8 +15,21 @@ enum class Color (val r: Int, val g: Int, val b: Int){
     VIOLET (238, 130, 238);
 
     fun rgb() = (r * 256 + g) * 256 + b
+
 }
+
+fun getMnemonic(color: Color) =
+        when(color){
+            Color.RED -> "Richard"
+            Color.BLUE -> "Of"
+            Color.YELLOW -> "York"
+            Color.GREEN -> "Gave"
+            Color.ORANGE -> "Battle"
+            Color.INDIGO -> "In"
+            Color.VIOLET -> "Vain"
+        }
 
 fun main(args: Array<String>) {
     println(Color.BLUE.rgb())
+    println(getMnemonic(Color.ORANGE))
 }
