@@ -19,3 +19,11 @@ fun eval(expression : Expr): Int{
     }
     throw IllegalArgumentException("Unknown Expression")
 }
+
+fun refactoredEval(expression : Expr): Int =
+        if (expression is Num){
+            expression.value
+        }else if(expression is Sum){
+            eval(expression.right) + eval(expression.left)
+        }else
+            throw IllegalArgumentException("Unknown Expression")
