@@ -10,6 +10,11 @@ fun main(args: Array<String>) {
         binaryReps[character] = binary
     }
 
+    /**
+     * This for loop allows unpacking an element of collection
+     * we are iterating over (in this case, a collection of key/value
+     * pairs in the map.
+     */
     for((letter, binary) in binaryReps){
         println("${letter} : ${binary}")
     }
