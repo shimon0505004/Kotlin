@@ -21,4 +21,11 @@ fun main(args: Array<String>) {
     for(number in 1 .. 100 step 2){
         println(fizzBuzz(number))
     }
+
+
+    println("****-----***----****")
+    for(number in 50 until 100 step 2){
+        println(fizzBuzz(number))
+    }
+
 }
