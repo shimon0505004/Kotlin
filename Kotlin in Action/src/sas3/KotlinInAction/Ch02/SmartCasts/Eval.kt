@@ -27,3 +27,14 @@ fun refactoredEval(expression : Expr): Int =
             eval(expression.right) + eval(expression.left)
         }else
             throw IllegalArgumentException("Unknown Expression")
+
+
+/**
+ * Used when instead of if cascade.
+ */
+fun refactoredEvalUsingWhen(expression : Expr): Int =
+        when (expression) {
+            is Num -> expression.value
+            is Sum -> eval(expression.right) + eval(expression.left)
+            else -> throw IllegalArgumentException("Unknown Expression")
+        }
