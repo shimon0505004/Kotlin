@@ -18,6 +18,14 @@ enum class Color (val r: Int, val g: Int, val b: Int){
 
 }
 
+/**
+ * When is the switch statement for kotlin.
+ * Unlike in java, you dont need to write break
+ * statements in each branch.
+ * If a match is successful, only the corresponding
+ * branch is executed.
+ */
+
 fun getMnemonic(color: Color) =
         when(color){
             Color.RED -> "Richard"
