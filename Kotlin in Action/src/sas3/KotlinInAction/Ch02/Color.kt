@@ -36,6 +36,10 @@ fun getMnemonic(color: Color) =
             Color.INDIGO -> "In"
             Color.VIOLET -> "Vain"
         }
+/**
+ * Combining multiple values in the same when branch
+ * if you separate them with commas
+ */
 
 fun getWarmth(color: Color) = when(color){
     Color.RED, Color.ORANGE, Color.YELLOW -> "warm"
