@@ -47,6 +47,7 @@ fun getWarmth(color: Color) = when(color){
     Color.BLUE, Color.INDIGO, Color.VIOLET -> "cold"
 }
 
+
 fun main(args: Array<String>) {
     println(Color.BLUE.rgb())
     println(getMnemonic(Color.ORANGE))
