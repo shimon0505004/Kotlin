@@ -4,4 +4,5 @@ fun main(args: Array<String>) {
     println(eval(Sum(Num(4),Sum(Num(2),Num(1)))))
     println(refactoredEval(Sum(Num(4),Sum(Num(2),Num(1)))))
     println(refactoredEvalUsingWhen(Sum(Num(4),Sum(Num(2),Num(1)))))
+    println(evalWithLogging(Sum(Num(4),Sum(Num(2),Num(1)))))
 }

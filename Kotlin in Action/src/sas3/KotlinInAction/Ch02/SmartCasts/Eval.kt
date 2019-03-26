@@ -38,3 +38,17 @@ fun refactoredEvalUsingWhen(expression : Expr): Int =
             is Sum -> eval(expression.right) + eval(expression.left)
             else -> throw IllegalArgumentException("Unknown Expression")
         }
+
+fun evalWithLogging(expression: Expr): Int = when(expression){
+    is Num -> {
+        println("Number : ${expression.value}")
+        expression.value
+    }
+    is Sum -> {
+        val left = evalWithLogging(expression.left)
+        val right = evalWithLogging(expression.right)
+        println("Sum: ${left} + ${right}")
+        left + right
+    }
+    else -> throw IllegalArgumentException("Unknown Expression")
+}
