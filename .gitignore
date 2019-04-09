@@ -10,6 +10,15 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# XML files
+*.xml
+
+# IML files
+*.iml
+
+# .kotlin_module files
+*.kotlin_module
+
 # Package Files #
 *.jar
 *.war
